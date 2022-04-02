@@ -4,36 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HydroGarden</title>
-    <!-- css stylesheets -->
-    <link rel="stylesheet" href="style.css" />
+    <title>HydroGarden 🪴</title>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Drink Water</h1>
-    <h3>Goal: 2 Liters</h3>
+    <h1>HydroGarden</h1>
+    <h3>Your daily goal is <span>2L (liters)</span></h3>
 
-    <!-- large cup -->
-    <div class="cup">
-      <div class="remained" id="remained">
-        <span id="liters">1.5 L</span>
-        <small>Remained</small>
+    <!-- large glass -->
+    <div class="glass">
+      <div class="remaining" id="remaining">
+        <span id="liters"></span>
+        <small>to go!</small>
       </div>
-      <div class="percentage" id="percentage">20%</div>
+      <div class="percentage" id="percentage"></div>
     </div>
 
-    <p class="text">Select how many glasses of water that you have drank</p>
+    <p class="text">How many glasses of water have you had today?</p>
 
-    <!-- little cups -->
-    <div class="cups">
-      <div class="cup cup-small full">250 ml</div>
-      <div class="cup cup-small full">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
-      <div class="cup cup-small">250 ml</div>
+    <!-- small glasses -->
+    <div class="glasses">
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
+      <div class="glass glass-sm">250 ml</div>
     </div>
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
