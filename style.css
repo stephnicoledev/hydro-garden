@@ -1,4 +1,8 @@
 /* fonts */
+@font-face {
+  font-family: Pixel;
+  src: url(fonts/pixel.TTF);
+}
 
 /* root styles */
 
@@ -7,6 +11,7 @@
   --fill-color: #6ab3f8;
   --glassBackground: #f8f8f8;
   --water: blue;
+  --heading-color: #6af8d5;
 }
 
 * {
@@ -16,11 +21,17 @@
 /* main styles */
 
 body {
-  background-image: url("/leaves.png");
+  background-image: url("leaves.png");
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h1 {
+  font-family: Pixel;
+  color: var(--heading-color);
+  font-size: 2rem;
 }
 
 /* large glass styles */
