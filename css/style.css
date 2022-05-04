@@ -1,12 +1,14 @@
 /* fonts */
 
 /* root styles */
+
 :root {
   --border-color: #144fc6;
   --fill-color: #6ab3f8;
   --glassBackground: #f8f8f8;
   --water: blue;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -19,27 +21,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
-}
-
-h1 {
-  margin: 10px 0 0;
-}
-
-h3 {
-  margin: 10px 0;
 }
 
 /* large glass styles */
 
 .glass {
-  /*
-  background-color: #fff;
+  background-color: var(--glassBackground);
+  color: var(--border-color);
   border: 4px solid var(--border-color);
-  color: var(--border-color);
-  */
-  background: var(--glassBackground);
-  color: var(--border-color);
   height: 330px;
   width: 150px;
   border-radius: 0 0 40px 40px;
@@ -47,9 +36,6 @@ h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-left: 50%;
-  left: -100px;
-  margin: 30px 0;
 }
 
 /* small glass styles */
@@ -89,15 +75,6 @@ h3 {
   text-align: center;
   flex: 1;
   transition: 0.3s ease; /* when the cup fills */
-}
-
-.remaining span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.remaining small {
-  font-size: 12px;
 }
 
 .percentage {

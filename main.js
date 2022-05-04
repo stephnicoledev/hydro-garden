@@ -1,10 +1,11 @@
+"use strict";
+
 const smGlass = document.querySelectorAll(".glass-sm");
-const liters = document.getElementById("liters");
 const percentage = document.getElementById("percentage");
 const remaining = document.getElementById("remaining");
 
 updateLgGlass();
-
+// calls the highlightGlasses function when a glass gets clicked on
 smGlass.forEach((glass, i) => {
   glass.addEventListener("click", () => highlightGlasses(i));
 });
@@ -45,14 +46,5 @@ function updateLgGlass() {
     percentage.style.visibility = "visible";
     percentage.style.height = `${(fullGlass / totalGlasses) * 330}px`; // check height of glass to make sure it's consistent
     percentage.innerText = `${(fullGlass / totalGlasses) * 100}%`;
-  }
-  // removes "to go" text if the glass is full
-  if (fullGlass === totalGlasses) {
-    remaining.style.visibility = "hidden";
-    remaining.style.height = 0;
-  } else {
-    remaining.style.visibility = "visible";
-    // show how many liters are remaining
-    liters.innerText = `${2 - (250 * fullGlass) / 1000}L`; // this will be calculated different depending on the metric
   }
 }
