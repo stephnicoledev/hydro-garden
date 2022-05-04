@@ -16,8 +16,8 @@
 /* main styles */
 
 body {
-  background-color: #3494e4;
-  color: #fff;
+  background-image: url("/leaves.png");
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
