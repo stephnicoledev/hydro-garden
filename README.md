@@ -18,4 +18,10 @@ HydroGarden is a water-tracking application that ensures you stay hydrated daily
   <li>How to add and remove classes on an element using <em>classList</em>.</li>
   <li>How to hide elements and make them visible using JavaScript.</li>
 </ul>
+
+## 🏗️ Features to add:
+<ul>
+  <li>Ability for users to add a custom water-intake goal.</li>
+  <li>A congratulations message that pops up when the user reaches their goal.</li>
+</ul>
 </div>
