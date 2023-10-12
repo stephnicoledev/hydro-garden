@@ -3,6 +3,8 @@
 const smGlass = document.querySelectorAll(".glass-sm");
 const percentage = document.getElementById("percentage");
 const remaining = document.getElementById("remaining");
+const lastGlass = document.getElementById("last-glass");
+const message = document.querySelector(".completed");
 
 updateLgGlass();
 // calls the highlightGlasses function when a glass gets clicked on
